@@ -8,7 +8,15 @@ body {
 
 p {
   padding: 10px 0;
-  width: 60%;
+  width: 70%;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 10px 0;
 }
 
 .content-container {
@@ -80,4 +88,20 @@ td, tr, th {
 aside {
   float: right;
   width: 30%;
+  background-color: rgba(18, 18, 182, 0.123);
 }
+
+.aside-text {
+  
+}
+
+.fun-facts {
+  float: left;
+  width: 70%;
+  margin: 20px 0;
+}
+
+footer {
+  margin: 20px 0;
+}
+
