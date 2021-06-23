@@ -121,6 +121,19 @@ if (nota >= 90 && nota <= 100) {
 }
 
 // EXERCÍCIO 8
+let numero1 = 3;
+let numero2 = 3;
+let numero3 = 4;
+let par;
+
+if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0) {
+  par = true;
+
+} else {
+  par = false;
+}
+
+console.log(par);
 
 // EXERCÍCIO 9
 
