@@ -121,12 +121,12 @@ if (nota >= 90 && nota <= 100) {
 }
 
 // EXERCÍCIO 8
-let numero1 = 3;
-let numero2 = 3;
-let numero3 = 4;
+let numerop1 = 3;
+let numerop2 = 3;
+let numerop3 = 4;
 let par;
 
-if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0) {
+if (numerop1 % 2 === 0 || numerop2 % 2 === 0 || numerop3 % 2 === 0) {
   par = true;
 
 } else {
@@ -136,12 +136,12 @@ if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0) {
 console.log(par);
 
 // EXERCÍCIO 9
-let numerop1 = 4;
-let numerop2 = 4;
-let numerop3 = 4;
+let numeroi1 = 4;
+let numeroi2 = 4;
+let numeroi3 = 4;
 let impar;
 
-if (numerop1 % 2 !== 0 || numerop2 % 2 !== 0 || numerop3 % 2 !== 0) {
+if (numeroi1 % 2 !== 0 || numeroi2 % 2 !== 0 || numeroi3 % 2 !== 0) {
   impar = true;
 
 } else {
@@ -151,5 +151,24 @@ if (numerop1 % 2 !== 0 || numerop2 % 2 !== 0 || numerop3 % 2 !== 0) {
 console.log(impar);
 
 // EXERCÍCIO 10
+let venda = 1000;
+let valorProduto = 100;
+
+let valorBruto = venda * valorProduto;
+
+let custo = 70;
+let imposto = 0.20;
+let custoReal = (custo * imposto) + custo;
+let valorLiquido = venda * custoReal;
+
+let lucro = valorBruto - valorLiquido;
+
+if (venda < 0 || valorProduto < 0 || custo < 0 ) {
+  console.log("Nenhum valor de entrada deve ser menor que 0, corrija o valor");
+
+} else {
+  console.log("Lucro = R$" + lucro);
+
+}
 
 // EXERCÍCIO 11
