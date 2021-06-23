@@ -40,6 +40,18 @@ if (num1 > num2 && num1 > num3) {
 }
 
 // EXERCÍCIO 4
+let numero = 1;
+
+if (numero < 0) {
+  console.log("negative");
+
+} else if (numero > 0) {
+    console.log("positive");
+
+} else {
+    console.log("zero");
+
+}
 
 // EXERCÍCIO 5
 
