@@ -136,6 +136,19 @@ if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0) {
 console.log(par);
 
 // EXERCÍCIO 9
+let numerop1 = 4;
+let numerop2 = 4;
+let numerop3 = 4;
+let impar;
+
+if (numerop1 % 2 !== 0 || numerop2 % 2 !== 0 || numerop3 % 2 !== 0) {
+  impar = true;
+
+} else {
+  impar = false;
+}
+
+console.log(impar);
 
 // EXERCÍCIO 10
 
