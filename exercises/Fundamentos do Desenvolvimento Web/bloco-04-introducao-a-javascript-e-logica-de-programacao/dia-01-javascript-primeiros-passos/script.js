@@ -54,6 +54,26 @@ if (numero < 0) {
 }
 
 // EXERCÍCIO 5
+let tri1 = 8;
+let tri2 = 7;
+let tri3 = 6;
+let triangulo;
+
+if (tri1 > tri2 + tri3) {
+  triangulo = false;
+
+} else if (tri2 > tri1 + tri3) {
+    triangulo = false;
+
+} else if (tri3 > tri1 + tri2) {
+    triangulo = false;
+
+} else {
+  triangulo = true;
+}
+
+console.log(triangulo);
+
 
 // EXERCÍCIO 6
 
