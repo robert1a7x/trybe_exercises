@@ -172,3 +172,45 @@ if (venda < 0 || valorProduto < 0 || custo < 0 ) {
 }
 
 // EXERCÍCIO 11
+
+let alicotaINSS;
+let alicotaRenda;
+
+let salario = 3000.10;
+
+if (salario <= 1556.94) {
+    alicotaINSS = salario * 0.08;
+
+} else if (salario <= 2594.92) {
+    alicotaINSS = salario * 0.09;
+
+} else if (salario <= 5189.82) {
+    alicotaINSS = salario * 0.11;
+
+} else {
+    alicotaINSS = 570.88;
+
+}
+
+let salarioBase = salario - alicotaINSS;
+
+if (salarioBase <= 1903.98) {
+  alicotaRenda = 0;
+
+} else if (salarioBase <= 2826.65) {
+    alicotaRenda = (salarioBase * 0.075) - 142.80;
+
+} else if (salarioBase <= 3751.05) {
+    alicotaRenda = (salarioBase * 0.15) - 354.80;
+
+} else if (salarioBase <= 4664.68) {
+    alicotaRenda = (salarioBase * 0.225) - 636.13;
+
+} else {
+    alicotaRenda = (salarioBase * 0.275) - 869.36;
+
+};
+
+let salarioFinal = salarioBase - alicotaRenda;
+
+console.log("Salário final = R$" + salarioFinal);
