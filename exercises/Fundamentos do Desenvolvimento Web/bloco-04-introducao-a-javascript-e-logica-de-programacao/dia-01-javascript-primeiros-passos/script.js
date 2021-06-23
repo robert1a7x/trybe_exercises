@@ -76,6 +76,24 @@ console.log(triangulo);
 
 
 // EXERCÍCIO 6
+let peca = "cavalo";
+
+switch (peca) {
+  case "peao":
+    console.log("Anda uma casa para frente");
+    break;
+  case "bispo":
+    console.log("Diagonais");
+    break;
+  case "torre":
+    console.log("Anda todas as casas para frente");
+    break;
+  case "cavalo":
+    console.log("Anda em forma de L");
+    break;
+  default:
+    console.log("Peça invalida")
+}
 
 // EXERCÍCIO 7
 
