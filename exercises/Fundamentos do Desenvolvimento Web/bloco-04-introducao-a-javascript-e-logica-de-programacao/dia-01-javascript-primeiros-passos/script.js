@@ -1,6 +1,4 @@
 // EXERCÍCIO 1
-
-// EXERCÍCIO 2
 let a = 10;
 let b = 5;
 
@@ -15,6 +13,18 @@ console.log("resultado adição = " + adicao + "\n" +
             "resultado multiplicação = " + multiplicacao + "\n" +
             "resultado divisão = " + divisao + "\n" +
             "resultado modulo = " + modulo + "\n");
+// EXERCÍCIO 2
+let n1 = 7;
+let n2 = 6;
+
+if (n1 > n2) {
+  console.log("n1 é o maior número!");
+
+} else {
+  console.log("n2 é o maior número!");
+
+}
+
 // EXERCÍCIO 3
 
 // EXERCÍCIO 4
