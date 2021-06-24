@@ -45,6 +45,15 @@ for (let i = 0; i < numbers.length; i += 1) {
 console.log("O maior número do array é: " + maiorValor);
 
 // Exercicio 6
+let numerosImpares = 0;
+
+for (let i = 0; i < numbers.length; i += 1) {
+  if (numbers[i] % 2 !== 0) {
+    numerosImpares += 1;
+  }
+}
+
+console.log("Total de números ímpares: " + numerosImpares);
 
 // Exercicio 7
 
