@@ -27,14 +27,27 @@ let media = somaM / numbers.length;
 console.log("A média de " + somaM + " é igual a = " + media);
 
 //EXERCICIO 4
-  if (media > 20) {
-    console.log("Valor maior que 20");
-  } else {
-    console.log("Valor menor ou igual a 20");
-  }
-  
+if (media > 20) {
+  console.log("Valor maior que 20");
+} else {
+  console.log("Valor menor ou igual a 20");
+}
+
 //EXERCICIO 5
+let maiorValor = 0;
 
-//EXERCICIO 6
+for (let i = 0; i < numbers.length; i += 1) {
+  if (numbers[i] > maiorValor) {
+    maiorValor = numbers[i];
+  }
+}
 
-//EXERCICIO 7
+console.log("O maior número do array é: " + maiorValor);
+
+// Exercicio 6
+
+// Exercicio 7
+
+// Exercicio 8
+
+// Exercicio 9
