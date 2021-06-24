@@ -27,7 +27,12 @@ let media = somaM / numbers.length;
 console.log("A média de " + somaM + " é igual a = " + media);
 
 //EXERCICIO 4
-
+  if (media > 20) {
+    console.log("Valor maior que 20");
+  } else {
+    console.log("Valor menor ou igual a 20");
+  }
+  
 //EXERCICIO 5
 
 //EXERCICIO 6
