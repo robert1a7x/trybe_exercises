@@ -5,14 +5,21 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
   for (let i = 0; i < numbers.length; i += 1) {
     console.log(numbers[i]);
   }
-//EXERCICIO 1
 
-//EXERCICIO 1
+//EXERCICIO 2
+  let soma = 0;
 
-//EXERCICIO 1
+  for (let i = 0; i < numbers.length; i += 1) {
+    soma += numbers[i];
+  }
 
-//EXERCICIO 1
+  console.log("O resultado da soma dos números é: " + soma);
+//EXERCICIO 3
 
-//EXERCICIO 1
+//EXERCICIO 4
 
-//EXERCICIO 1
+//EXERCICIO 5
+
+//EXERCICIO 6
+
+//EXERCICIO 7
