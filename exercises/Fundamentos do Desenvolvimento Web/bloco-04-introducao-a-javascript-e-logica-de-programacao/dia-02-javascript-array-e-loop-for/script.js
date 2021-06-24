@@ -56,7 +56,27 @@ for (let i = 0; i < numbers.length; i += 1) {
 console.log("Total de números ímpares: " + numerosImpares);
 
 // Exercicio 7
+let menorNumero = numbers[0];
 
+for (let i = 0; i < numbers.length; i += 1) {
+  if (numbers[i] < menorNumero) {
+    menorNumero = numbers[i];
+  }
+}
+
+console.log("O menor número do array é: " + menorNumero);
 // Exercicio 8
+let array25 = [];
+
+for (let i = 1; i < 26; i += 1) {
+  array25[i - 1] = i; 
+}
+
+console.log("Output da criação de um array do 1 ao 25 = [" + array25 + "]");
 
 // Exercicio 9
+
+for (i = 0; i < array25.length; i += 1) {
+  let divisao = array25[i] / 2;
+  console.log("O resultado da divisao do número " + array25[i] + " por 2 é igual a: " + divisao);
+}
