@@ -1,4 +1,4 @@
-let array = [2, 3, 6, 7, 10, 1];
+let array = [2, 20, 6, 7, 10, 1];
 
 function maiorIndice(a) {
   let maior = 0;
