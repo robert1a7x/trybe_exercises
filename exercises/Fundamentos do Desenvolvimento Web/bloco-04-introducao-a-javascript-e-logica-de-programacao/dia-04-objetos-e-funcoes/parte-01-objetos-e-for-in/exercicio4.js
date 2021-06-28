@@ -7,5 +7,5 @@ let info = {
 info.recorrente = "Sim";
 
 for (let i in info) {
-  console.log(i); // mostra todas as chaves
+  console.log(info[i]); // mostra o conteudo de todas as chaves
 }
