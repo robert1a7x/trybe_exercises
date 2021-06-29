@@ -1,4 +1,4 @@
-let array = [5, 20, 1, 7, 10, 2];
+let array = [2, 4, 6, 7, 10, 0, -3];
 
 function menorIndice(a) {
   let menor = a[0];
