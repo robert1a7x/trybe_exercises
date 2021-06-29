@@ -1,11 +1,20 @@
-let n = 5;
+let palavra = "trybe";
+let fimPlalavra = "be";
 
-function getSomaElementos(n) {
-    let soma = 0;
-    for (let i = 1; i <= n; i += 1) {
-        soma += i;
+function verificarPalavra(p, f) {
+    p = p.split("");
+    f = f.split("");
+    let resposta;
+
+    for (let i = 0; i < f.length; i += 1) {
+        if (p[p.length - f.length + i]  === f[i]) {
+            resposta = true;
+        } else {
+            resposta = false;
+        }
     }
-    return soma;
+
+    return resposta;
 }
 
-console.log("O somatorio de todos os números de 1 até o " + n + " é igual a = " + getSomaElementos(n));
+console.log("A sentença " + fimPlalavra + " é igual ao final da palavra " + palavra + " ? " + verificarPalavra(palavra, fimPlalavra));
