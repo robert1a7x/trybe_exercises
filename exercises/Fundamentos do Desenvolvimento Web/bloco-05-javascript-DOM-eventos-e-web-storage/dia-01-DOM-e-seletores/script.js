@@ -28,3 +28,9 @@ function mudaCorCentro() {
   document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
 }
 mudaCorCentro();
+
+//4
+function corrigirTitulo() {
+  document.getElementsByTagName("h1")[0].innerText = "Exercício 5.1 - JavaScript";
+}
+corrigirTitulo()
