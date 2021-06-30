@@ -18,3 +18,7 @@ function addFuturo() {
 addFuturo();
 
 // 2
+function mudarCorFundo() {
+  document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76,164,109)";
+}
+mudarCorFundo();
