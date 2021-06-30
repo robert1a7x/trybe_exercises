@@ -43,3 +43,12 @@ function textToUpperCase() {
   }
 }
 textToUpperCase();
+
+//6
+function allParagraphToConsole() {
+  let todosOsP = document.getElementsByTagName("p");
+  for (let i = 0; i < todosOsP.length; i += 1) {
+    console.log(todosOsP[i].innerText);
+  }
+}
+allParagraphToConsole();
