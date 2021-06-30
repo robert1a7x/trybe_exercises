@@ -34,3 +34,12 @@ function corrigirTitulo() {
   document.getElementsByTagName("h1")[0].innerText = "Exercício 5.1 - JavaScript";
 }
 corrigirTitulo()
+
+//5
+function textToUpperCase() {
+ let todosOsP = document.getElementsByTagName("p");
+  for (let i = 0; i < todosOsP.length; i += 1) {
+    todosOsP[i].style.textTransform = "uppercase";
+  }
+}
+textToUpperCase();
