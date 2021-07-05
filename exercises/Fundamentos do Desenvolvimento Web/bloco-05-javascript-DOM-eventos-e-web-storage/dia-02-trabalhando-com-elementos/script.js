@@ -38,8 +38,12 @@ divLeftContent.appendChild(leftImage);
 
 //exercicio 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6
 let ul = document.createElement("ul");
+divRightContent.appendChild(ul);
 let listItems = ["Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"];
 
 for (let i of listItems) {
-  
+  let item = i;
+  let itemCreation = document.createElement("li");
+  itemCreation.innerText = item;
+  ul.appendChild(itemCreation);
 }
