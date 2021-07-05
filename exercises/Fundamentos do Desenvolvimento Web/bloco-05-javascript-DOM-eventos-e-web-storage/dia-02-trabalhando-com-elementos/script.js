@@ -47,3 +47,9 @@ for (let i of listItems) {
   itemCreation.innerText = item;
   ul.appendChild(itemCreation);
 }
+
+//exercicio 9 - Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+for (let i = 0; i < 3; i += 1) {
+  let h3Creation = document.createElement("h3");
+  divMainContent.appendChild(h3Creation);
+}
