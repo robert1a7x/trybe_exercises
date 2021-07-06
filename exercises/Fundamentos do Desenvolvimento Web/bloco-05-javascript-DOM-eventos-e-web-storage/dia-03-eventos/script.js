@@ -55,11 +55,10 @@ function createHolidayButton(string) {
 createHolidayButton("Feriados")
 
 //exercicio 3 - mudar cor de fundo dos feriados
+let holidaysArray = document.querySelectorAll(".holiday");
 buttonHoliday.addEventListener("click", highlightHoliday);
 
 function highlightHoliday() {
-  let holidaysArray = document.querySelectorAll(".holiday");
-
   for (let i of holidaysArray) {
     if (i.style.backgroundColor !== "green") {
       i.style.backgroundColor = "green";
@@ -129,13 +128,23 @@ function setColor(color) {
   newColorDiv.style.backgroundColor = color;
   myTasks.appendChild(newColorDiv);
 }
-setColor("red");
+let taskColor = "red";
+setColor(taskColor);
 
 //exercicio 9 - adicionar a classe selected quando selecionar a div da cor inserida
 newColorDiv.addEventListener("click", selectedTask);
 
 function selectedTask(e) {
   e.target.classList.toggle("selected");
-  newTask.classList.toggle("selected");
-  newColorDiv.classList.toggle("green");
+}
+
+//exercicio 10 - Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
+ulDays.addEventListener("click", changeDayBackground);
+
+function changeDayBackground(e) {
+  if (e.target.id !== "days" && e.target.style.backgroundColor !== taskColor) {
+    e.target.style.backgroundColor = taskColor;
+  } else {
+    e.target.style.backgroundColor = "rgb(238, 238, 238)";
+  }
 }
