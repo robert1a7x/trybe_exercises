@@ -110,3 +110,13 @@ function zoomOut(e) {
     e.target.style.transform = "scale(1.0)";
   }
 }
+
+//exercicio 7 - adicionar tarefa personalizada ao calendario
+let myTasks = document.querySelector(".my-tasks")
+let newTask = document.createElement("span");
+
+function addTask(string) {
+  newTask.innerText = string;
+  myTasks.appendChild(newTask);
+}
+addTask("Estudar");
