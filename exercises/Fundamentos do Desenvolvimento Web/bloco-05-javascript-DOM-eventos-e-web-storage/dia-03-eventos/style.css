@@ -157,3 +157,16 @@ label {
 .selected {
   background-color: red;;
 }
+
+#meus-compromissos {
+  float: right;
+  width: 34%;
+  text-align: justify;
+  list-style: none;
+}
+
+#meus-compromissos li {
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 30px;
+}

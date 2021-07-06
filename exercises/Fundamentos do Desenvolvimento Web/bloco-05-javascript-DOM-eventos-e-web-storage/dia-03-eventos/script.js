@@ -148,3 +148,33 @@ function changeDayBackground(e) {
     e.target.style.backgroundColor = "rgb(238, 238, 238)";
   }
 }
+
+//Bonus - Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
+let input = document.querySelector("#task-input");
+let ul = document.querySelector("#meus-compromissos");
+let addbutton = document.querySelector("#btn-add");
+
+input.addEventListener("keypress", addItemOnKeyPress);
+addbutton.addEventListener("click", addItemOnClick);
+
+function createListItem() {
+  let li = document.createElement("li");
+  li.innerText = input.value;
+  ul.appendChild(li);
+  input.value = "";
+}
+
+
+function addItemOnClick() {
+  if (input.value.length > 0) {
+    createListItem();
+  } else {
+    alert ("Inválido, insira um compromisso");
+  }
+}
+
+function addItemOnKeyPress(e) {
+  if (input.value.length > 0 && e.key == "Enter") {
+    createListItem();
+  }
+}
