@@ -130,3 +130,12 @@ function setColor(color) {
   myTasks.appendChild(newColorDiv);
 }
 setColor("red");
+
+//exercicio 9 - adicionar a classe selected quando selecionar a div da cor inserida
+newColorDiv.addEventListener("click", selectedTask);
+
+function selectedTask(e) {
+  e.target.classList.toggle("selected");
+  newTask.classList.toggle("selected");
+  newColorDiv.classList.toggle("green");
+}
