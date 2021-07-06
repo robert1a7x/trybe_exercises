@@ -120,3 +120,13 @@ function addTask(string) {
   myTasks.appendChild(newTask);
 }
 addTask("Estudar");
+
+//exercicio 8 - implementar uma legenda com cor para a tarefa criada anteriormente
+let newColorDiv = document.createElement("div");
+
+function setColor(color) {
+  newColorDiv.className = "task";
+  newColorDiv.style.backgroundColor = color;
+  myTasks.appendChild(newColorDiv);
+}
+setColor("red");
