@@ -42,3 +42,13 @@ for (let i of dezDaysList) {
 }
 createDays();
 
+//exercicio 2
+function createHolidayButton(string) {
+  let buttonContainer = document.querySelector(".buttons-container")
+  let buttonHoliday = document.createElement("button");
+  buttonHoliday.id = "btn-holiday";
+  buttonHoliday.innerText = string;
+
+  buttonContainer.appendChild(buttonHoliday);
+}
+createHolidayButton("Feriados")
