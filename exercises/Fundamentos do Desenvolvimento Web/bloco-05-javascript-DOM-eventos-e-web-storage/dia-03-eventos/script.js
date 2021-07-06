@@ -10,7 +10,35 @@ function createDaysOfTheWeek() {
     weekDaysList.appendChild(dayListItem);
   };
 };
-
 createDaysOfTheWeek();
 
-// Escreva seu código abaixo.
+//exercicio 1 - criando os dias do calendario
+function createDays() {
+const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+let ulDays = document.querySelector("#days"); // armazenando o ul onde os dias serão inseridos
+
+for (let i of dezDaysList) {
+  let day = i;
+  let dayItem = document.createElement("li");
+
+  if (i === 24 || i === 31) {
+    dayItem.className = "day holiday";
+    dayItem.innerHTML = i;
+    ulDays.appendChild(dayItem);
+  } else if (i === 4 || i === 11 || i === 18) {
+    dayItem.className = "day friday";
+    dayItem.innerHTML = i;
+    ulDays.appendChild(dayItem);
+  } else if (i === 25) {
+    dayItem.className = "day friday holiday";
+    dayItem.innerHTML = i;
+    ulDays.appendChild(dayItem);
+  } else {
+    dayItem.className = "day";
+    dayItem.innerHTML = i;
+    ulDays.appendChild(dayItem);
+  }
+}
+}
+createDays();
+
