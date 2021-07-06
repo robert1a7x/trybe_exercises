@@ -42,7 +42,7 @@ for (let i of dezDaysList) {
 }
 createDays();
 
-//exercicio 2
+//exercicio 2 - criar o botao de feriados
 function createHolidayButton(string) {
   let buttonContainer = document.querySelector(".buttons-container")
   let buttonHoliday = document.createElement("button");
@@ -52,3 +52,19 @@ function createHolidayButton(string) {
   buttonContainer.appendChild(buttonHoliday);
 }
 createHolidayButton("Feriados")
+
+//exercicio 3
+let buttonHoliday = document.querySelector("#btn-holiday");
+buttonHoliday.addEventListener("click", highlightHoliday);
+
+function highlightHoliday() {
+  let holidaysArray = document.querySelectorAll(".holiday");
+
+  for (let i of holidaysArray) {
+    if (i.style.backgroundColor !== "green") {
+      i.style.backgroundColor = "green";
+    } else {
+      i.style.backgroundColor = "rgb(238, 238, 238)";
+    }
+  }
+}
