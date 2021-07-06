@@ -93,3 +93,20 @@ function changeFridayText() {
     }
   }
 }
+
+//exercicio 6 - adiciona efeito de zoomIn e zoomOut nos dias
+let ulDays = document.querySelector("#days");
+ulDays.addEventListener("mouseover", zoomIn);
+ulDays.addEventListener("mouseout", zoomOut);
+
+function zoomIn(e) {
+  if (e.target.id !== "days") {
+    e.target.style.transform = "scale(1.6)";
+  }
+}
+
+function zoomOut(e) {
+  if (e.target.id !== "days") {
+    e.target.style.transform = "scale(1.0)";
+  }
+}
