@@ -44,9 +44,9 @@ createDays();
 
 //exercicio 2 - criar o botao de feriados
 let buttonContainer = document.querySelector(".buttons-container");
+let buttonHoliday = document.createElement("button");
 
 function createHolidayButton(string) {
-  let buttonHoliday = document.createElement("button");
   buttonHoliday.id = "btn-holiday";
   buttonHoliday.innerText = string;
 
@@ -55,7 +55,6 @@ function createHolidayButton(string) {
 createHolidayButton("Feriados")
 
 //exercicio 3 - mudar cor de fundo dos feriados
-let buttonHoliday = document.querySelector("#btn-holiday");
 buttonHoliday.addEventListener("click", highlightHoliday);
 
 function highlightHoliday() {
@@ -71,9 +70,26 @@ function highlightHoliday() {
 }
 
 //exercicio 4 - criar um botao para sexta feira
+let fridayButton = document.createElement("button");
+
 function createFridayButton(string) {
-  let fridayButton = document.createElement("button");
   fridayButton.innerText = string;
   buttonContainer.appendChild(fridayButton);
 }
 createFridayButton("Sexta-feira")
+
+//exercicio 5 - Modificar o texto de sexta ṕara sextou!
+fridayButton.addEventListener("click", changeFridayText);
+
+function changeFridayText() {
+  let fridayArray = document.querySelectorAll(".friday")
+  let fridayDays = [4, 11, 18, 25];
+
+  for (let i in fridayArray) {
+    if (fridayArray[i].innerText !== "Sextou!") {
+      fridayArray[i].innerText = "Sextou!";
+    } else {
+      fridayArray[i].innerText = fridayDays[i];
+    }
+  }
+}
