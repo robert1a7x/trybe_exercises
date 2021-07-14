@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <form action="" method="GET">
-    <fieldset id="dados-pessoais">
+  <form class="form" action="" method="GET">
+    <fieldset class="legend-field" id="dados-pessoais">
       <legend>Dados Pessoais</legend>
       <label for="input-name">Nome </label>
       <input type="text" name="nome" id="input-name" maxlength="40" required><br>
@@ -24,14 +24,28 @@
       <label for="input-estados">Estados</label>
       <select name="estados" id="input-estados" required>
       </select><br>
+      <p>Tipo de residência</p>
       <input type="radio" name="moradia" id="casa" value="casa" required>
-      <label for="casa">Casa</label>
+      <label for="casa">Casa</label><br>
       <input type="radio" name="moradia" id="apartamento" value="apartamento" required>
       <label for="apartamento">Apartamento</label>
     </fieldset>
 
-    <button id="submit" type="submit">Enviar</button>
-    <button id="clear" type="reset">Limpar</button>
+    <fieldset class="legend-field" id="curriculo">
+      <legend>Dados do último emprego</legend>
+      <label for="resume">Resumo do currículo</label>
+      <textarea name="resume" id="resume" cols="30" rows="10" maxlength="1000" required></textarea><br>
+      <label for="cargo">Cargo </label>
+      <input type="text" name="cargo" id="cargo" maxlength="40" required><br>
+      <label for="descricao">Descrição do cargo</label>
+      <input type="text" name="descricao" id="descricao" maxlength="500" required><br>
+      <label for="data">Data de início</label>
+      <input type="date" name="data" id="data" required>
+    </fieldset>
+    <div class="buttons">
+      <button class="enviar" id="submit" type="submit">Enviar</button>
+      <button class="limpar" id="clear" type="reset">Limpar</button>
+    </div>
   </form>
   <script src="script.js"></script>
 </body>

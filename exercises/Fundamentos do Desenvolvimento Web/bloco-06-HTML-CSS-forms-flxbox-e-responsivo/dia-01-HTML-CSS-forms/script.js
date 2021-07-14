@@ -1,13 +1,3 @@
-//preventDefault
-const submitButton = document.querySelector('#submit');
-
-function preventDefault(e) {
-  e.preventDefault();
-  console.log('teste');
-}
-
-submitButton.addEventListener('click', preventDefault);
-
 //create states
 const select = document.querySelector('#input-estados');
 const statesArray = [
