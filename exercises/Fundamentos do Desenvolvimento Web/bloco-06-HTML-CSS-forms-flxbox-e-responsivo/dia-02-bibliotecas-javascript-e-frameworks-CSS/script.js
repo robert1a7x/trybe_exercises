@@ -36,3 +36,6 @@ const statesArray = [
     option.value = statesArray[i].value;
     select.appendChild(option);
   }
+
+// select date
+document.getElementById('myInputId').DatePickerX.init();
