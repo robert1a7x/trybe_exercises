@@ -39,3 +39,6 @@ const statesArray = [
 
 // select date
 document.getElementById('myInputId').DatePickerX.init();
+
+//validate form
+validation.init(".form");
