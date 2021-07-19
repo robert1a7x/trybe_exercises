@@ -24,6 +24,7 @@ body {
 .menu-container {
   display: flex;
   flex-basis: 500px; /*Exercicio 1 - adicionar flex basis nos items do header*/
+  flex-grow: 1; /*Exercicio 3 - o flex grow para que os elementos ocupem toda a largura do container */
 }
 
 .menu-container ul {
@@ -38,4 +39,5 @@ body {
   font-size: 1.3rem;
   list-style: none;
   margin-right: 10px;
+  align-self: center; /*Exercicio 4 - usar o align self para que todos os li's centralizem no cross axys*/
 }
