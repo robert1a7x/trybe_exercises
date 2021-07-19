@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+/*Header*/
+.header-container {
+  background-color: #5C687C;
+  display: flex;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-basis: 268px; /*Exercicio 1 - adicionar flex basis nos items do header*/
+  order: -1; /*Exercicio 2 - adicionar a propriedade order para deixar o logo antes dos items do menu*/
+}
+
+.menu-container {
+  display: flex;
+  flex-basis: 500px; /*Exercicio 1 - adicionar flex basis nos items do header*/
+  flex-grow: 1; /*Exercicio 3 - o flex grow para que os elementos ocupem toda a largura do container */
+}
+
+.menu-container ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-container li {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  list-style: none;
+  margin-right: 10px;
+  align-self: center; /*Exercicio 4 - usar o align self para que todos os li's centralizem no cross axys*/
+}
+
+/*Main content*/
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 700px; /*exercicio 7 - Faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card*/
+  flex-grow: 10; /*exercicio 8 - Aplique uma propriedade com o valor 10 que expanda o container de filmes (utilizei flex-grow pra isso)*/
+}
+
+.movie-container h2 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container div {
+  align-items: center;
+  background-color: #5C687C;
+  border: black solid 1px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 10px;
+  flex-basis: 16%; /*exercicio 7 - Faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card*/
+  flex-grow: 1; /*exercicio 9 - Adicione uma propriedade com o valor 1 que faça com que suas div do container de filmes ocupe todo o espaço em branco*/
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  flex-basis: 350px; /*Exercicio 5 - deixar o basis do aside com 350px*/
+  align-self: center; /*Exercicio 6 - Aplique um alinhamento para centralizar e outro para expandir o aside*/
+  flex-grow: 1; /*Exercicio 6 - Aplique um alinhamento para centralizar e outro para expandir o aside*/
+}
+
+.aside-container h3, h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.aside-container p {
+  margin: 10px 0;
+  text-align: justify;
+}
