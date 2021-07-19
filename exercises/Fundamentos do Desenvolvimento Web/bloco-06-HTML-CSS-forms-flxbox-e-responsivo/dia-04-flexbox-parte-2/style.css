@@ -80,6 +80,8 @@ body {
   flex-direction: column;
   margin: 20px;
   flex-basis: 350px; /*Exercicio 5 - deixar o basis do aside com 350px*/
+  align-self: center; /*Exercicio 6 - Aplique um alinhamento para centralizar e outro para expandir o aside*/
+  flex-grow: 1; /*Exercicio 6 - Aplique um alinhamento para centralizar e outro para expandir o aside*/
 }
 
 .aside-container h3, h4 {
