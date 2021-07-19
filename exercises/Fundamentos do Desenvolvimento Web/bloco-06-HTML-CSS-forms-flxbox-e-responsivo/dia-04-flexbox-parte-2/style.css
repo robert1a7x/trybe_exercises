@@ -76,6 +76,7 @@ body {
   justify-content: center;
   margin: 10px;
   flex-basis: 16%; /*exercicio 7 - Faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card*/
+  flex-grow: 1; /*exercicio 9 - Adicione uma propriedade com o valor 1 que faça com que suas div do container de filmes ocupe todo o espaço em branco*/
 }
 
 .aside-container {
