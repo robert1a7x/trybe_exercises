@@ -18,6 +18,7 @@ body {
   display: flex;
   justify-content: center;
   flex-basis: 268px; /*Exercicio 1 - adicionar flex basis nos items do header*/
+  order: -1; /*Exercicio 2 - adicionar a propriedade order para deixar o logo antes dos items do menu*/
 }
 
 .menu-container {
