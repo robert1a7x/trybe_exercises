@@ -52,6 +52,7 @@ body {
 .movie-container {
   display: flex;
   flex-direction: column;
+  flex-basis: 700px; /*exercicio 7 - Faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card*/
 }
 
 .movie-container h2 {
@@ -73,6 +74,7 @@ body {
   height: 150px;
   justify-content: center;
   margin: 10px;
+  flex-basis: 16%; /*exercicio 7 - Faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card*/
 }
 
 .aside-container {
