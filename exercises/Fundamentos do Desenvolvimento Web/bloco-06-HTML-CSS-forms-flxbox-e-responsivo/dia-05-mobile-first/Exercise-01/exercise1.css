@@ -1,4 +1,4 @@
-/* Mobile first */
+/* Mobile first - -telas pequenas */
 body {
   font-size: 1.4em;
   margin: 0 10px;
@@ -19,12 +19,16 @@ figure {
   margin: 4px;
 }
 
-/* Primeiro break point */
+/* Primeiro break point telas medias */
 @media screen and (min-width: 490px) {
   body {
     background-color: rgb(243, 243, 243);
     font-size: 1.3em;
     margin: 0 15px;
+  }
+  
+  h1 {
+    text-align: center;
   }
 
   h2 {
@@ -47,7 +51,7 @@ figure {
   }
 }
 
-/* Segundo break point */
+/* Segundo break point telas grandes */
 @media screen and (min-width: 950px) {
   body {
     margin: 0 auto;
