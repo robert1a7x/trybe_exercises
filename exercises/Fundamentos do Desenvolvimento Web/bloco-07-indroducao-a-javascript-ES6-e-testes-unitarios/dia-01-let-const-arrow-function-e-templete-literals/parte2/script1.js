@@ -10,4 +10,4 @@ const calcFatorial = f => {
   return f;
 }
 
-console.log(calcFatorial(fatorial));
+console.log(`O fatorial de ${fatorial} é ${calcFatorial(fatorial)}`);
