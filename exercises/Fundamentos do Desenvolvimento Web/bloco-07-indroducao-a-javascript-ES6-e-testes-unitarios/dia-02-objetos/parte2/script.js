@@ -43,7 +43,22 @@ const listObjectValues = obj => Object.values(obj);
 console.log(`Os valores do objeto são: ${listObjectValues(lesson2)}`);
 console.log('-------------------------------------');
 
-// 5 - Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign
+// 5 - Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign Cada chave desse novo objeto será uma aula
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 
 console.log(allLessons);
+console.log('-------------------------------------');
+
+// 6 - Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
+const getAllStudents = obj => {
+  const objKeys = Object.keys(obj);
+  let numeroAlunos = 0;
+
+  for (let i in objKeys) {
+    numeroAlunos += obj[objKeys[i]].numeroEstudantes; // desta forma seria o mesmo de acessar = allLessons.lesson1.numeroEstudantes, fazendo isso para as 3 lessons
+  }
+  return numeroAlunos;
+}
+
+console.log(`O número total de estudantes é: ${getAllStudents(allLessons)}`);
+console.log('-------------------------------------');
