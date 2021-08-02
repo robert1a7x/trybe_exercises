@@ -64,14 +64,13 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-// 2 - Crie uma string com os nomes de todas as pessoas autoras.
-const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
+//3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+const expectedResult = 43;
 
-function reduceNames() {
-  return books.reduce((acc, curr, index) => {
-    if (index === books.length - 1) return (acc + `${curr.author.name}.`); // mudando a forma de criar a string para o ultimo elemento, ja que ele precisa terminar com o .
-    return (acc + `${curr.author.name}, `); // o acumulador vai receber sempre o nome do proximo autor da lista com a concatenação especificada
-  }, '');
+function averageAge() {
+  const nOfAuthors = books.length;
+  const getSomaIdades = books.reduce((acc, escritor) => (acc + (escritor.releaseYear - escritor.author.birthYear)), 0);
+  return getSomaIdades / nOfAuthors;
 }
 
-assert.strictEqual(reduceNames(), expectedResult);
+assert.strictEqual(averageAge(), expectedResult);
